@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Oxygen Regular";
+  src: url("../fonts/Oxygen/Oxygen_Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("../fonts/Raleway/Raleway_Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway Thin";
+  src: url("../fonts/Raleway/Raleway_Thin.ttf");
+}
+
+@font-face {
+  font-family: "Raleway Light";
+  src: url("../fonts/Raleway/Raleway_Light.ttf");
+}
+
+@font-face {
+  font-family: "Raleway Medium";
+  src: url("../fonts/Raleway/Raleway_Medium.ttf");
+}
+
+@font-face {
+  font-family: "Raleway SemiBold";
+  src: url("../fonts/Raleway/Raleway_SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("../fonts/Raleway/Raleway_Bold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway ExtraBold";
+  src: url("../fonts/Raleway/Raleway_ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway Heavy";
+  src: url("../fonts/Raleway/Raleway_Heavy.ttf");
+}
+
+@font-face {
+  font-family: "MyriadPro Regular";
+  src: url("../fonts/MyriadPro/MyriadPro_Regular.ttf");
+}
+
+@font-face {
+  font-family: "MyriadPro Bold";
+  src: url("../fonts/MyriadPro/MyriadPro_Bold.ttf");
+}
+
+@font-face {
+  font-family: "KaushanScript";
+  src: url("../fonts/KaushanScript/KaushanScript_Regular.ttf");
+}
+
+.respondTo(@_device, @_content) {
+  & when (@_device = phones) {
+    @media all and (max-width: 479px) { @_content(); }
+  }
+  & when (@_device = wide-phones) {
+    @media all and (min-width: 480px) and (max-width: 767px) { @_content(); }
+  }
+  & when (@_device = tablets) {
+    @media all and (min-width: 768px) and (max-width: 991px) { @_content(); }
+  }
+  & when (@_device = small-desktops) {
+    @media all and (min-width: 992px) and (max-width: 1199px) { @_content(); }
+  }
+  & when (@_device = lg-desktops) {
+    @media all and (min-width: 1200px) and (max-width: 1440px) { @_content(); }
+  }
+  & when (@_device = xlg-desktops) {
+    @media all and (min-width: 1441px) and (max-width: 1920px) { @_content(); }
+  }
+}
+
+.customRespond(@_minWidth, @_maxWidth, @_styles) {
+  @media all and (min-width: @_minWidth) and (max-width: @_maxWidth) {
+    @_styles();
+  }
+}
+
+@brandColor: #fd5c08;
+@lightColor: #fff;
+@darkColor: #3f3e41;
+@greyColor: #545357;
+@lightGreyColor: #ededed;
+@menuDarkColor: #37383a;
+@menuLightColor: #ede7d1;
+
+body {
+  a:focus,
+  a:hover {
+    text-decoration: none;
+  }
+
+  a {
+    outline: none;
+  }
+}
+
+h1, h2, h3, h4, h5 , h6 {
+  margin: 0;
+}
+
+.viewAllBtnMixin() {
+  display: block;
+  width: 140px;
+  height: 40px;
+  background-color: @greyColor;
+  color: @lightColor;
+  font-family: "Raleway Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  span {
+    color: @brandColor;
+    font-size: 8px;
+    margin-right: 5px;
+    position: relative;
+    top: -2px;
+  }
+
+  &:hover {
+    color: @brandColor;
+    cursor: pointer;
+  }
+}
+
+.findOutMoreMixin() {
+  font-family: "Raleway Bold", sans-serif;
+  color: @darkColor;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: @brandColor;
+  }
+
+  span {
+    color: @brandColor;
+    font-size: 8px;
+    margin-right: 5px;
+    position: relative;
+    top: -2px;
+  }
+}

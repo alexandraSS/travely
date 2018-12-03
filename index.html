@@ -1,0 +1,1198 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Travel</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row navRow">
+			<div class="container">
+				<nav class="navbar navbar-default pageHeader">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand logo" href="#">
+							<img src="images/logoColor.svg" alt="">
+						</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav menuWrap">
+							<li>
+								<a href="planeTickets.html">
+									<div><i class="fas fa-plane"></i></div>
+									<div>Plane tickets</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="active">
+									<div><i class="fas fa-globe"></i></div>
+									<div>Travel</div>
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<li>
+								<a href="rentACar.html">
+									<div><i class="fas fa-car"></i></div>
+									<div>Rent a&nbsp;car</div>
+								</a>
+							</li>
+							<li>
+								<a href="hotels.html">
+									<div><i class="fas fa-coffee"></i></div>
+									<div>Hotels</div>
+								</a>
+							</li>
+						</ul>
+						<div class="blockForTablets">
+						<ul class="nav navbar-nav navbar-right langAndSearchWrap">
+							<li>
+								<div class="langBlock">
+									<select name="select-box" id="selectId" class="select selectpicker" data-width="60px">
+										<option name="value" value="en" selected>EN</option>
+										<option name="value" value="ru">RU</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<div class="searchBlock">
+									<div class="searchIcon">
+										<i class="fas fa-search icon"></i>
+									</div>
+									<div class="formWrap">
+										<form>
+											<input class="input" type="text" placeholder="Search..." required>
+											<button type="submit"><i class="fas fa-angle-right"></i></button>
+										</form>
+									</div>
+								</div>
+							</li>
+						</ul>
+						</div>
+					</div><!-- /.navbar-collapse -->
+				</nav>
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="carousel-1" class="carousel slide headerSlider" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-1" data-slide-to="1"></li>
+					<li data-target="#carousel-1" data-slide-to="2"></li>
+					<li data-target="#carousel-1" data-slide-to="3"></li>
+					<li data-target="#carousel-1" data-slide-to="4"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+
+					<div class="item item1 active">
+						<div class="container">
+							<div class="itemInside">
+								<div class="carouselTextWrap">
+									<div class="subtitle">Experience</div>
+									<h3 class="title">American<br>holiday</h3>
+									<div>America has been growing as&nbsp;a&nbsp;tourist destination, and it&nbsp;becomes more and more accustomed to&nbsp;receiving so&nbsp;many visitors, its hospitality just gets better. </div>
+								</div>
+								<div class="carouselPriceWrap">
+									<div class="priceBlock">
+										<div class="tabs priceBlockMenu">
+											<span class="tab plane activeTabMenu">
+												<i class="fas fa-plane"></i>
+											</span>
+											<span class="tab coffee">
+												<i class="fas fa-coffee"></i>
+											</span>
+											<span class="tab car">
+												<i class="fas fa-car"></i>
+											</span>
+										</div>
+										<div class="tab_content priceBlockContent">
+											<div class="tab_item">
+												<div>Starting at</div>
+												<div class="price">
+													<span>&euro;</span>210
+												</div>
+											</div>
+											<div class="tab_item">
+												<div>Starting at</div>
+												<div class="price">
+													<span>&euro;</span>70
+												</div>
+											</div>
+											<div class="tab_item">
+												<div>Starting at</div>
+												<div class="price">
+													<span>&euro;</span>50
+												</div>
+											</div>
+										</div>
+										<div class="priceBlockCheck">
+											<a href="linkPage.html">
+												<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+												Check out offer
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item item2">
+						<div class="container">
+							<div class="itemInside">
+								<div class="carouselTextWrap">
+									<div class="subtitle">Eligendi</div>
+									<h3 class="title">Lorem<br>ipsum</h3>
+									<div>Cumque dicta laudantium nemo repudiandae unde voluptate! Consequatur debitis delectus eligendi eum fugit, id iure.</div>
+								</div>
+								<div class="carouselPriceWrap">
+									<div class="priceBlock">
+										<div class="tabs priceBlockMenu">
+											<span class="tab plane activeTabMenu">
+												<i class="fas fa-plane"></i>
+											</span>
+											<span class="tab coffee">
+												<i class="fas fa-coffee"></i>
+											</span>
+											<span class="tab car">
+												<i class="fas fa-car"></i>
+											</span>
+										</div>
+										<div class="tab_content priceBlockContent">
+											<div class="tab_item">
+												<div>Starting at</div>
+												<div class="price">
+													<span>&euro;</span>350
+												</div>
+											</div>
+											<div class="tab_item">
+												<div>Starting at</div>
+												<div class="price">
+													<span>&euro;</span>80
+												</div>
+											</div>
+											<div class="tab_item">
+												<div>Starting at</div>
+												<div class="price">
+													<span>&euro;</span>60
+												</div>
+											</div>
+										</div>
+										<div class="priceBlockCheck">
+											<a href="linkPage.html">
+												<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+												Check out offer
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item item3">
+						<div class="container">
+							<div class="itemInside">
+								<div class="carouselTextWrap">
+									<div class="subtitle">Nemo</div>
+									<h3 class="title">Repellat<br>sequip</h3>
+									<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci eveniet iste nam neque non, quasi repellat sequi. Facere, facilis illum labore necessitatibus porro suscipit.</div>
+								</div>
+								<div class="carouselPriceWrap">
+									<div class="priceBlock">
+
+										<div class="tabs priceBlockMenu">
+											<span class="tab plane activeTabMenu">
+												<i class="fas fa-plane"></i>
+											</span>
+											<span class="tab coffee">
+												<i class="fas fa-coffee"></i>
+											</span>
+											<span class="tab car">
+												<i class="fas fa-car"></i>
+											</span>
+										</div>
+										<div class="tab_content priceBlockContent">
+											<div class="tab_item">
+												<div>Starting at</div>
+												<div class="price">
+													<span>&euro;</span>190
+												</div>
+											</div>
+											<div class="tab_item">
+												<div>Starting at</div>
+												<div class="price">
+													<span>&euro;</span>70
+												</div>
+											</div>
+											<div class="tab_item">
+												<div>Starting at</div>
+												<div class="price">
+													<span>&euro;</span>50
+												</div>
+											</div>
+										</div>
+										<div class="priceBlockCheck">
+											<a href="linkPage.html">
+												<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+												Check out offer
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item item4">
+						<div class="container">
+							<div class="itemInside">
+								<div class="carouselTextWrap">
+									<div class="subtitle">Tempora</div>
+									<h3 class="title">Dolor<br>ducimu</h3>
+									<div>Aut beatae consequuntur doloribus ducimus ea enim harum hic impedit incidunt nisi quisquam quod ratione, rem repellendus, saepe tempora vel voluptate voluptatibus.</div>
+								</div>
+								<div class="carouselPriceWrap">
+									<div class="priceBlock">
+										<div class="tabs priceBlockMenu">
+											<span class="tab plane activeTabMenu">
+												<i class="fas fa-plane"></i>
+											</span>
+											<span class="tab coffee">
+												<i class="fas fa-coffee"></i>
+											</span>
+											<span class="tab car">
+												<i class="fas fa-car"></i>
+											</span>
+										</div>
+										<div class="tab_content priceBlockContent">
+											<div class="tab_item">
+												<div>Starting at</div>
+												<div class="price">
+													<span>&euro;</span>270
+												</div>
+											</div>
+											<div class="tab_item">
+												<div>Starting at</div>
+												<div class="price">
+													<span>&euro;</span>75
+												</div>
+											</div>
+											<div class="tab_item">
+												<div>Starting at</div>
+												<div class="price">
+													<span>&euro;</span>52
+												</div>
+											</div>
+										</div>
+										<div class="priceBlockCheck">
+											<a href="linkPage.html">
+												<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+												Check out offer
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item item5">
+						<div class="container">
+							<div class="itemInside">
+								<div class="carouselTextWrap">
+									<div class="subtitle">Tempora</div>
+									<h3 class="title">Dolor<br>ducimu</h3>
+									<div>Aut beatae consequuntur doloribus ducimus ea enim harum hic impedit incidunt nisi quisquam quod ratione, rem repellendus, saepe tempora vel voluptate voluptatibus.</div>
+								</div>
+								<div class="carouselPriceWrap">
+									<div class="priceBlock">
+										<div class="tabs priceBlockMenu">
+											<span class="tab plane activeTabMenu">
+												<i class="fas fa-plane"></i>
+											</span>
+											<span class="tab coffee">
+												<i class="fas fa-coffee"></i>
+											</span>
+											<span class="tab car">
+												<i class="fas fa-car"></i>
+											</span>
+										</div>
+										<div class="tab_content priceBlockContent">
+											<div class="tab_item">
+												<div>Starting at</div>
+												<div class="price">
+													<span>&euro;</span>130
+												</div>
+											</div>
+											<div class="tab_item">
+												<div>Starting at</div>
+												<div class="price">
+													<span>&euro;</span>40
+												</div>
+											</div>
+											<div class="tab_item">
+												<div>Starting at</div>
+												<div class="price">
+													<span>&euro;</span>36
+												</div>
+											</div>
+										</div>
+										<div class="priceBlockCheck">
+											<a href="linkPage.html">
+												<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+												Check out offer
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row personallyRow">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 col-lg-6 personallyHeader">
+						<h3><span>Personally</span><br>Tailored experiences</h3>
+					</div>
+					<div class="col-md-5 col-lg-6 personallyDescription">
+						From the breathtaking national parks in the Western U.S. to the charming Southern towns and historic cities in the East, TRAVELY offers escorted tours throughout Canada and the United States.
+					</div>
+				</div>
+				<div class="personallyGallery">
+					<div class="personallyGalleryItem item1" tabindex="1">
+						<div class="priceWrap">
+							Starting at
+							<div class="price">
+								<span>&euro;</span>399
+							</div>
+						</div>
+						<div class="description">
+							<h4>
+								<span>India</span><br>
+								Lorem<br>ipsum dolor consectetur
+							</h4>
+							<a href="linkPage.html" class="more">
+								<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+								Find out more
+							</a>
+						</div>
+					</div>
+					<div class="personallyGalleryItem item2" tabindex="2">
+						<div class="priceWrap">
+							Starting at
+							<div class="price">
+								<span>&euro;</span>259
+							</div>
+						</div>
+						<div class="description">
+							<h4>
+								<span>Thailand</span><br>
+								Ad amet asperiores, at&nbsp;doloribu
+							</h4>
+							<a href="linkPage.html" class="more">
+								<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+								Find out more
+							</a>
+						</div>
+					</div>
+					<div class="personallyGalleryItem item3" tabindex="3">
+						<div class="priceWrap">
+							Starting at
+							<div class="price">
+								<span>&euro;</span>920
+							</div>
+						</div>
+						<div class="description">
+							<h4>
+								<span>Greece</span><br>
+								Earum esse est&nbsp;minus asperiores
+							</h4>
+							<a href="linkPage.html" class="more">
+								<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+								Find out more
+							</a>
+						</div>
+					</div>
+					<div class="personallyGalleryItem item4" tabindex="4">
+						<div class="priceWrap">
+							Starting at
+							<div class="price">
+								<span>&euro;</span>210
+							</div>
+						</div>
+						<div class="description">
+							<h4>
+								<span>Kenya</span><br>
+								Necessitatib perferendis rem repudian
+							</h4>
+							<a href="linkPage.html" class="more">
+								<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+								Find out more
+							</a>
+						</div>
+					</div>
+					<div class="personallyGalleryItem item5" tabindex="5">
+						<div class="priceWrap">
+							Starting at
+							<div class="price">
+								<span>&euro;</span>270
+							</div>
+						</div>
+						<div class="description">
+							<h4>
+								<span>China</span><br>
+								Thousand pillar temple expedition
+							</h4>
+							<a href="linkPage.html" class="more">
+								<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+								Find out more
+							</a>
+						</div>
+					</div>
+					<div class="personallyGalleryItem item6" tabindex="6">
+						<div class="priceWrap">
+							Starting at
+							<div class="price">
+								<span>&euro;</span>359
+							</div>
+						</div>
+						<div class="description">
+							<h4>
+								<span>Cuba</span><br>
+								Suscipit tempora totam voluptatem
+							</h4>
+							<a href="linkPage.html" class="more">
+								<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+								Find out more
+							</a>
+						</div>
+					</div>
+				</div>
+				<a href="linkPage.html" class="viewAllBtn">
+					<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+					View all
+				</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="carousel-2" class="carousel slide bestOfferSlider" data-ride="carousel" data-interval="false">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item item1 active">
+						<div class="container">
+							<div class="itemInside">
+								<div class="itemHeader">
+									<div class="sliderTitle">Best Offers</div>
+									<h3>
+										<span>Experience</span><br>
+										African Safari
+									</h3>
+									<div class="description">Africa has been growing as&nbsp;a&nbsp;tourist destination, and as&nbsp;it&nbsp;becomes more and more accustomed to&nbsp;receiving so&nbsp;many visitors, its&nbsp;hospitality just gets better.</div>
+								</div>
+								<div class="bestOffersBlock">
+									<a href="linkPage.html" class="priceOfferWrap">
+										<div class="priceWrap">
+											Starting at
+											<div class="price">
+												<span>&euro;</span>
+												210
+											</div>
+										</div>
+										<div class="offerDescriptionWrap">
+											<h4>Kenya</h4>
+											<div>A&nbsp;fantastic 4-day Camping Safari to&nbsp;Kenya&rsquo;s<br class="hidden-xs hidden-sm"> Premier Reserve&nbsp;&mdash;
+												<span>The&nbsp;Masai&nbsp;Mara</span>.
+											</div>
+											<div class="more">
+												<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+												Find out more
+											</div>
+											<div class="africaMap">
+												<img src="images/AfricaImg.png" alt="">
+											</div>
+										</div>
+									</a>
+									<a href="linkPage.html" class="viewAllBtn">
+										<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+										View all
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item item2">
+						<div class="container">
+							<div class="itemInside">
+								<div class="itemHeader">
+									<div class="sliderTitle">Best Offers</div>
+									<h3>
+										<span>Experience</span><br>
+										African Safari
+									</h3>
+									<div class="description">Africa has been growing as&nbsp;a&nbsp;tourist destination, and as&nbsp;it&nbsp;becomes more and more accustomed to&nbsp;receiving so&nbsp;many visitors, its&nbsp;hospitality just gets better.</div>
+								</div>
+								<div class="bestOffersBlock">
+									<a href="linkPage.html" class="priceOfferWrap">
+										<div class="priceWrap">
+											Starting at
+											<div class="price">
+												<span>&euro;</span>
+												210
+											</div>
+										</div>
+										<div class="offerDescriptionWrap">
+											<h4>Kenya</h4>
+											<div>A&nbsp;fantastic 4-day Camping Safari to&nbsp;Kenya&rsquo;s<br class="hidden-xs hidden-sm"> Premier Reserve&nbsp;&mdash;
+												<span>The&nbsp;Masai&nbsp;Mara</span>.
+											</div>
+											<div class="more">
+												<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+												Find out more
+											</div>
+											<div class="africaMap">
+												<img src="images/AfricaImg.png" alt="">
+											</div>
+										</div>
+									</a>
+									<a href="linkPage.html" class="viewAllBtn">
+										<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+										View all
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control leftArrow" href="#carousel-2" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control rightArrow" href="#carousel-2" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="row northAmericaRow">
+			<div class="container northAmericaContainer">
+				<div class="northAmericaMap"></div>
+				<div class="northAmericaHeader">
+					<h3><span>Open road</span><br>North American cities tour</h3>
+					<div>America has been growing as&nbsp;a&nbsp;tourist destination, and as&nbsp;it&nbsp;becomes more and more
+						accustomed to&nbsp;receiving so&nbsp;many visitors, its&nbsp;hospitality just gets better.</div>
+				</div>
+				<div class="northAmericaGallery">
+					<div class="northAmericaGalleryItem item1">
+						<div class="priceWrap">
+							Starting at
+							<div class="price">
+								<span>&euro;</span>399
+							</div>
+						</div>
+						<div class="description">
+							<h4>
+								<span>Lorem</span><br>
+								Lorem<br>ipsum dolor consectetur
+							</h4>
+							<a href="linkPage.html" class="more">
+								<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+								Find out more
+							</a>
+						</div>
+					</div>
+					<div class="northAmericaGalleryItem item2">
+						<div class="priceWrap">
+							Starting at
+							<div class="price">
+								<span>&euro;</span>259
+							</div>
+						</div>
+						<div class="description">
+							<h4>
+								<span>Lorem</span><br>
+								Ad amet asperiores, at&nbsp;doloribu
+							</h4>
+							<a href="linkPage.html" class="more">
+								<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+								Find out more
+							</a>
+						</div>
+					</div>
+					<div class="northAmericaGalleryItem item3">
+						<div class="priceWrap">
+							Starting at
+							<div class="price">
+								<span>&euro;</span>270
+							</div>
+						</div>
+						<div class="description">
+							<h4>
+								<span>Canada</span><br>
+								Montreal<br>city night crawlers
+							</h4>
+							<a href="linkPage.html" class="more">
+								<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+								Find out more
+							</a>
+						</div>
+					</div>
+					<div class="northAmericaGalleryItem item4">
+						<div class="priceWrap">
+							Starting at
+							<div class="price">
+								<span>&euro;</span>210
+							</div>
+						</div>
+						<div class="description">
+							<h4>
+								<span>Lorem</span><br>
+								Necessitatib perferendis rem repudian
+							</h4>
+							<a href="linkPage.html" class="more">
+								<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+								Find out more
+							</a>
+						</div>
+					</div>
+					<div class="northAmericaGalleryItem item5">
+						<div class="priceWrap">
+							Starting at
+							<div class="price">
+								<span>&euro;</span>270
+							</div>
+						</div>
+						<div class="description">
+							<h4>
+								<span>Lorem</span><br>
+								Earum esse est&nbsp;minus asperiores
+							</h4>
+							<a href="linkPage.html" class="more">
+								<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+								Find out more
+							</a>
+						</div>
+					</div>
+					<div class="northAmericaGalleryItem item6">
+						<div class="priceWrap">
+							Starting at
+							<div class="price">
+								<span>&euro;</span>359
+							</div>
+						</div>
+						<div class="description">
+							<h4>
+								<span>Lorem</span><br>
+								Suscipit tempora totam voluptatem
+							</h4>
+							<a href="linkPage.html" class="more">
+								<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+								Find out more
+							</a>
+						</div>
+					</div>
+				</div>
+				<a href="linkPage.html" class="viewAllBtn">
+					<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+					View all
+				</a>
+			</div>
+		</div>
+
+		<div class="row lastMinuteRow">
+			<div id="carousel-3" class="carousel slide lastMinuteSlider" data-ride="carousel" data-interval="false">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item item1 active">
+						<a href="linkPage.html">
+							<div class="container">
+								<div class="DeparturesWrap">
+									<h3>Long journey's</h3>
+									<div class="departuresNumber">
+										Today
+										<div class="number">
+											34,098<br>
+											<span>Departures</span>
+										</div>
+									</div>
+								</div>
+								<div class="priceOfferWrap">
+									<div class="offerDescriptionWrap">
+										<h4>Taiwan</h4>
+										<div>It&nbsp;is&nbsp;a&nbsp;modern cosmopolitan metropolis with a&nbsp;lively and diversified face, filled with exuberance.</div>
+										<div class="more">
+											<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+											Find out more
+										</div>
+									</div>
+									<div class="priceWrap">
+										<i class="fas fa-plane"></i>
+										Starting at
+										<div class="price">
+											<span>&euro;</span>
+											210
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="item item2">
+						<a href="linkPage.html">
+							<div class="container">
+								<div class="DeparturesWrap">
+									<h3>Europa</h3>
+									<div class="departuresNumber">
+										Today
+										<div class="number">
+											34,098<br>
+											<span>Departures</span>
+										</div>
+									</div>
+								</div>
+								<div class="priceOfferWrap">
+									<div class="offerDescriptionWrap">
+										<h4>Commodi</h4>
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi exercitationem.</div>
+										<div class="more">
+											<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+											Find out more
+										</div>
+									</div>
+									<div class="priceWrap">
+										<i class="fas fa-plane"></i>
+										Starting at
+										<div class="price">
+											<span>&euro;</span>
+											110
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="item item3">
+						<a href="linkPage.html">
+							<div class="container">
+								<div class="DeparturesWrap">
+									<h3>Mediter-<br>ranean</h3>
+									<div class="departuresNumber">
+										Today
+										<div class="number">
+											37,007<br>
+											<span>Departures</span>
+										</div>
+									</div>
+								</div>
+								<div class="priceOfferWrap">
+									<div class="offerDescriptionWrap">
+										<h4>Beatae</h4>
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi exercitationem.</div>
+										<div class="more">
+											<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+											Find out more
+										</div>
+									</div>
+									<div class="priceWrap">
+										<i class="fas fa-plane"></i>
+										Starting at
+										<div class="price">
+											<span>&euro;</span>
+											135
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="item item4">
+						<a href="linkPage.html">
+							<div class="container">
+								<div class="DeparturesWrap">
+									<h3>Skiing</h3>
+									<div class="departuresNumber">
+										Today
+										<div class="number">
+											26,358<br>
+											<span>Departures</span>
+										</div>
+									</div>
+								</div>
+								<div class="priceOfferWrap">
+									<div class="offerDescriptionWrap">
+										<h4>Elitum</h4>
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi exercitationem.</div>
+										<div class="more">
+											<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+											Find out more
+										</div>
+									</div>
+									<div class="priceWrap">
+										<i class="fas fa-plane"></i>
+										Starting at
+										<div class="price">
+											<span>&euro;</span>
+											430
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="item item5">
+						<a href="linkPage.html">
+							<div class="container">
+								<div class="DeparturesWrap">
+									<h3>Asia</h3>
+									<div class="departuresNumber">
+										Today
+										<div class="number">
+											28,356<br>
+											<span>Departures</span>
+										</div>
+									</div>
+								</div>
+								<div class="priceOfferWrap">
+									<div class="offerDescriptionWrap">
+										<h4>Ametsi</h4>
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi exercitationem.</div>
+										<div class="more">
+											<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+											Find out more
+										</div>
+									</div>
+									<div class="priceWrap">
+										<i class="fas fa-plane"></i>
+										Starting at
+										<div class="price">
+											<span>&euro;</span>
+											375
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="item item6">
+						<a href="linkPage.html">
+							<div class="container">
+								<div class="DeparturesWrap">
+									<h3>Round-<br>the-world</h3>
+									<div class="departuresNumber">
+										Today
+										<div class="number">
+											29,148<br>
+											<span>Departures</span>
+										</div>
+									</div>
+								</div>
+								<div class="priceOfferWrap">
+									<div class="offerDescriptionWrap">
+										<h4>Dolorsit</h4>
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi exercitationem.</div>
+										<div class="more">
+											<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+											Find out more
+										</div>
+									</div>
+									<div class="priceWrap">
+										<i class="fas fa-plane"></i>
+										Starting at
+										<div class="price">
+											<span>&euro;</span>
+											324
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="item item7">
+						<a href="linkPage.html">
+							<div class="container">
+								<div class="DeparturesWrap">
+									<h3>Yoga</h3>
+									<div class="departuresNumber">
+										Today
+										<div class="number">
+											21,869<br>
+											<span>Departures</span>
+										</div>
+									</div>
+								</div>
+								<div class="priceOfferWrap">
+									<div class="offerDescriptionWrap">
+										<h4>Adipsit</h4>
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi exercitationem.</div>
+										<div class="more">
+											<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+											Find out more
+										</div>
+									</div>
+									<div class="priceWrap">
+										<i class="fas fa-plane"></i>
+										Starting at
+										<div class="price">
+											<span>&euro;</span>
+											168
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="item item8">
+						<a href="linkPage.html">
+							<div class="container">
+								<div class="DeparturesWrap">
+									<h3>Spa</h3>
+									<div class="departuresNumber">
+										Today
+										<div class="number">
+											32,648<br>
+											<span>Departures</span>
+										</div>
+									</div>
+								</div>
+								<div class="priceOfferWrap">
+									<div class="offerDescriptionWrap">
+										<h4>Teturum</h4>
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi exercitationem.</div>
+										<div class="more">
+											<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+											Find out more
+										</div>
+									</div>
+									<div class="priceWrap">
+										<i class="fas fa-plane"></i>
+										Starting at
+										<div class="price">
+											<span>&euro;</span>
+											290
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="lastMinuteSliderMenu">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-md-7 menuCol">
+								<ul class="nav navbar-nav menu">
+									<li class="dropup">
+										<a href="#" class="dropdown-toggle menuItem" data-toggle="dropdown" role="button"
+											 aria-haspopup="true" aria-expanded="false">Last Minute</a>
+										<ul class="dropdown-menu submenu">
+											<li><a href="#" data-target="#carousel-3" data-slide-to="0" class="active">
+												<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+												Long journey's</a></li>
+											<li><a href="#" data-target="#carousel-3" data-slide-to="1">
+												<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+												Europa</a></li>
+											<li><a href="#" data-target="#carousel-3" data-slide-to="2">
+												<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+												Mediterranean</a></li>
+											<li><a href="#" data-target="#carousel-3" data-slide-to="3">
+												<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+												Skiing</a></li>
+										</ul>
+									</li>
+									<li class="dropup">
+										<a href="#" class="dropdown-toggle menuItem" data-toggle="dropdown" role="button" aria-haspopup="true"
+											 aria-expanded="false">Cruises</a>
+										<ul class="dropdown-menu submenu">
+											<li><a href="#" data-target="#carousel-3" data-slide-to="4">
+												<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+												Asia</a></li>
+											<li><a href="#" data-target="#carousel-3" data-slide-to="5">
+												<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+												Round-the-world</a></li>
+										</ul>
+									</li>
+									<li class="dropup">
+										<a href="#" class="dropdown-toggle menuItem" data-toggle="dropdown" role="button" aria-haspopup="true"
+											 aria-expanded="false">Wellness</a>
+										<ul class="dropdown-menu submenu">
+											<li><a href="#" data-target="#carousel-3" data-slide-to="6">
+												<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+												Yoga</a></li>
+											<li><a href="#" data-target="#carousel-3" data-slide-to="7">
+												<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+												Spa</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="col-xs-12 col-md-5">
+								<a href="linkPage.html" class="checkItAll">
+									<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+									Check it all
+								</a>
+								<div class="sliderControls">
+									<a class="left carousel-control leftArrow" href="#carousel-3" role="button" data-slide="prev">
+										<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="right carousel-control rightArrow" href="#carousel-3" role="button" data-slide="next">
+										<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row newsletterRow">
+			<div class="container newsletterContainer">
+				<div class="subtitle">newsletter</div>
+				<h3><span>Find out first</span><br>about the best offers</h3>
+				<form action="#">
+					<input type="text" placeholder="Your E-mail" pattern="^([A-Za-z0-9\.-]+)(@)([A-Za-z0-9\.-]+)(\.)([A-Za-z0-9\.-]{2,})$" title="e.g. email@domain.com" required>
+					<button>
+						<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+					</button>
+				</form>
+				<div class="description">Sign Up&nbsp;to&nbsp;get best offers on&nbsp;plane tickets, hotel bookings,
+					rent&nbsp;a&nbsp;car<br class="hidden-xs"> and&nbsp;much&nbsp;more.</div>
+			</div>
+		</div>
+
+		<div class="row partnerRow">
+			<div class="container partnerContainer">
+				<div class="header">
+					<h3>Partner<br><span>hotels</span></h3>
+				</div>
+				<div class="partnerLogo astoria">
+					<a href="http://www.hotel-astoria.com/" target="_blank">
+						<img src="images/hotels/astoriaLogo.svg" alt="">
+					</a>
+				</div>
+				<div class="partnerLogo jr">
+					<a href="http://www.jrhotelgroup.com/" target="_blank">
+						<img src="images/hotels/jrHotelGroupLogo.svg" alt="">
+					</a>
+				</div>
+				<div class="partnerLogo princess">
+					<a href="http://www.hotelprincess.be/" target="_blank">
+						<img src="images/hotels/princessLogo.svg" alt="">
+						<div class="sale">25<span>%</span></div>
+					</a>
+				</div>
+				<div class="partnerLogo realPark">
+					<a href="http://hotelrealpark.com" target="_blank">
+						<img src="images/hotels/realParkLogo.svg" alt="">
+					</a>
+				</div>
+				<div class="partnerLogo royce">
+					<a href="http://www.roycehotel.com.au/" target="_blank">
+						<img src="images/hotels/royceLogo.svg" alt="">
+						<div class="sale">20<span>%</span></div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row footerRow">
+			<footer class="container footerContainer">
+				<div class="socialAndCopyrightWrap">
+					<div class="socialBlock">
+						<div class="socialItem">
+							<a href="linkPage.html">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</div>
+						<div class="socialItem">
+							<a href="linkPage.html">
+								<i class="fab fa-pinterest-p"></i>
+							</a>
+						</div>
+						<div class="socialItem">
+							<a href="linkPage.html">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</div>
+					</div>
+					<div class="copyrightBlock">&copy; Travely 2014&nbsp;&mdash; All rights reseved</div>
+				</div>
+				<div class=" logoWrap">
+					<a href="#">
+						<img src="images/logoWhite.svg" alt="">
+					</a>
+					<div class="contactData exceptMobiles">
+						Specialists in&nbsp;family adventure travel and family activity holidays&nbsp;overseas.
+						Call&nbsp;us&nbsp;on&nbsp;0845&nbsp;051&nbsp;4567.<br><span data-toggle="modal" data-target=".bs-example-modal-lg">Travely. New Alresford, Hampshire,
+						SO24&nbsp;0AA</span>
+					</div>
+					<div class="contactData mobilesOnly">
+						<a href="tel:08450514567">Specialists in&nbsp;family adventure travel and family activity holidays&nbsp;overseas. Call&nbsp;us&nbsp;on&nbsp;0845&nbsp;051&nbsp;4567.</a><br>
+						<span data-toggle="modal" data-target=".bs-example-modal-lg">Travely. New Alresford, Hampshire, SO24&nbsp;0AA</span>
+					</div>
+					<div class="craftedBy">Crafted by&nbsp;
+						<a href="linkPage.html" target="_blank">EA93</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<div class="scrollUp">
+			<a href="#">
+				<i class="fas fa-chevron-up"></i>
+			</a>
+		</div>
+
+	</div> <!-- end container-fluid -->
+
+	<!-- Modal -->
+	<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<div id="map"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2HJiIthsDRIJeKvjeDH7QlsAve0K_X9Y&callback=initMap" async defer></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
